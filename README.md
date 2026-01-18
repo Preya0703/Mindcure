@@ -1,102 +1,70 @@
-MindCure – Mental Health Support Platform
+# Getting Started with Create React App
 
-MindCure is a web-based mental health support platform designed to help users navigate common mental health challenges through structured therapy programs and self-assessment tools. The application focuses on clarity, accessibility, and thoughtful user flows for individuals seeking guidance related to stress, anxiety, depression, sleep issues, and addiction.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The platform is designed as a single-page application with modular therapy programs and emergency guidance to support timely decision-making for users.
+## Available Scripts
 
-Why this matters :
-MindCure emphasizes clarity, correctness, and user trust, which are critical when designing software for mental health and healthcare-adjacent use cases.
+In the project directory, you can run:
 
-Key Features:
-User authentication with Login and Sign Up flows
+### `npm start`
 
-Therapy programs for:
-Sleep Therapy
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Stress Therapy
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Anxiety Therapy
+### `npm test`
 
-Addiction Therapy
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Self-assessment question flows for Depression, Anxiety, and Stress
+### `npm run build`
 
-Emergency support page for critical situations
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Clean, responsive UI with intuitive navigation
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Modular frontend architecture designed for future backend expansion
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<img width="1529" height="1182" alt="Screenshot 2026-01-18 010715" src="https://github.com/user-attachments/assets/1a10dca3-a79a-4b37-8231-9e790409d922" />
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Tech Stack:
-Frontend
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-React.js
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-React Router
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-SCSS
+## Learn More
 
-Backend:
-Python-based backend logic (Flask-ready integration)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Tools:
-Git, GitHub
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-VS Code
+### Code Splitting
 
-GIMP
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-My Role & Contributions:
-This project was developed as a team effort with clearly defined ownership. I was responsible for end-to-end frontend development and integration.
+### Analyzing the Bundle Size
 
-Specifically, I was responsible for:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Designing the complete UI/UX and application flow
+### Making a Progressive Web App
 
-Developing the full frontend using React.js and React Router
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Building all major user-facing pages, including:
+### Advanced Configuration
 
-Login and Sign Up
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Therapy Program pages (Sleep, Stress, Anxiety, Addiction)
+### Deployment
 
-Self-assessment question pages (Depression, Anxiety, Stress)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Welcome, Join Us, and Emergency support pages
+### `npm run build` fails to minify
 
-Integrating frontend components with Python-based backend logic
-
-Handling testing, debugging, and UI refinements to ensure smooth user experience
-
-Preparing technical documentation and final project reports
-
-Project Structure (High Level):
-/src/pages – Core application pages and user flows
-
-/src/components – Reusable UI components
-
-/src/styles – SCSS styling and layout
-
-/src/router – Application routing logic
-
-Architecture & Flow:
-Single Page Application built with React and React Router
-
-Component-driven architecture for reusable UI elements
-
-Page-level components manage user flows for therapy programs and assessments
-
-Frontend designed to integrate with Python-based backend services via API endpoints
-
-Outcome:
-MindCure was successfully delivered as a responsive, user-centric mental health platform. The application enables users to explore therapy programs, complete self-assessments, and receive appropriate guidance through a clear and accessible interface.
-
-The project demonstrates frontend ownership, real-world workflow design, and integration readiness for backend-driven mental health logic.
-
-Notes
-
-This project was developed in an academic setting, but with an emphasis on real-world usability, modular design, and clean engineering practices. Backend services are structured to be Flask-ready for future expansion.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
