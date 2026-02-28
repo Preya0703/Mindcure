@@ -1,0 +1,40 @@
+def solution(n, c) -> int:
+    # Get positions of all 1s
+    pos = [i for i, val in enumerate(n) if val == 1]
+    m = len(pos)
+    
+    # If c is 1, no swaps are needed as any single 1 is already 'consecutive'
+    if c <= 1:
+        return 0
+        
+    # Build prefix sums of the positions for fast window calculation
+    pref = [0] * (m + 1)
+    for i in range(m):
+        pref[i+1] = pref[i] + pos[i]
+        
+    min_swaps = float('inf')
+    
+    # x: 1s to the left (including median), y: 1s to the right
+    x = (c + 1) // 2
+    y = c - x
+    
+    # Sliding window to find the best center for our c consecutive 1s
+    for i in range(x - 1, m - y):
+        median_val = pos[i]
+        
+        # Sum of current positions in the window
+        left_sum = pref[i + 1] - pref[i + 1 - x]
+        right_sum = pref[i + 1 + y] - pref[i + 1]
+        
+        # Calculate target positions: where 1s should be to be consecutive
+        # Formula: (first_val + last_val) * count // 2
+        target_left_sum = (median_val + (median_val - x + 1)) * x // 2
+        target_right_sum = ((median_val + 1) + (median_val + y)) * y // 2
+        
+        # Cost is the difference between where they are and where they should be
+        cost_left = target_left_sum - left_sum
+        cost_right = right_sum - target_right_sum
+        
+        min_swaps = min(min_swaps, cost_left + cost_right)
+            
+    return int(min_swaps)
